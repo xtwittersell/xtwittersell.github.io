@@ -47,26 +47,134 @@
 
 ```
 <div style="height:200px; overflow-y:scroll; background:#111; padding:10px; border-radius:10px;">
-    NecatiBozkurt44<br>
-    TR_ARMY_bolahae<br>
-    furkan996<br>
-    aliicyrl<br>
-    Esmacaglarr<br>
-    sandalc78<br>
-    velvetflygirl<br>
-    efetann<br>
-    segal_55<br>
-    sevinplastik<br>
-    MertSungur9<br>
-    erguntek<br>
-    bengisu05077736<br>
-    halimeavc<br>
-    aliynaalbayrak<br>
-    gonullas<br>
-    nurayelaa<br>
-    HalukKablama<br>
-    furkansenn52<br>
-    bbetul44<br>
+    <!DOCTYPE html>
+
+<html>
+<head>
+    <title>Digital Account Market</title>
+
+```
+<style>
+    body {
+        margin:0;
+        font-family: Arial;
+        background:#0d0d0d;
+        color:white;
+    }
+
+    header {
+        background:#111;
+        padding:15px;
+        display:flex;
+        justify-content:space-between;
+    }
+
+    h1 {
+        color:#00ffcc;
+    }
+
+    .btn {
+        background:#00ffcc;
+        padding:10px 15px;
+        border:none;
+        cursor:pointer;
+    }
+
+    .container {
+        padding:20px;
+    }
+
+    .card {
+        background:#1a1a1a;
+        padding:15px;
+        margin:10px;
+        border-radius:10px;
+    }
+
+    .price {
+        color:#00ffcc;
+        font-size:18px;
+    }
+
+    input {
+        padding:10px;
+        margin:5px;
+        width:90%;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<header>
+    <h1>💰 Digital Account Market</h1>
+    <div>
+        <button class="btn" onclick="showLogin()">Login</button>
+        <button class="btn" onclick="showSignup()">Signup</button>
+    </div>
+</header>
+
+<div class="container">
+
+```
+<h2>🔥 Available Accounts</h2>
+
+<div class="card">
+    <p>@NecatiBozkurt44</p>
+    <p class="price">$2</p>
+    <button class="btn">Buy</button>
+</div>
+
+<div class="card">
+    <p>@TR_ARMY_bolahae</p>
+    <p class="price">$2</p>
+    <button class="btn">Buy</button>
+</div>
+
+<div class="card">
+    <p>@furkan996</p>
+    <p class="price">$2</p>
+    <button class="btn">Buy</button>
+</div>
+```
+
+</div>
+
+<!-- LOGIN FORM -->
+
+<div id="login" style="display:none; text-align:center;">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username"><br>
+    <input type="password" placeholder="Password"><br>
+    <button class="btn">Login</button>
+</div>
+
+<!-- SIGNUP FORM -->
+
+<div id="signup" style="display:none; text-align:center;">
+    <h2>Signup</h2>
+    <input type="text" placeholder="Username"><br>
+    <input type="password" placeholder="Password"><br>
+    <button class="btn">Create Account</button>
+</div>
+
+<script>
+function showLogin(){
+    document.getElementById("login").style.display="block";
+    document.getElementById("signup").style.display="none";
+}
+
+function showSignup(){
+    document.getElementById("signup").style.display="block";
+    document.getElementById("login").style.display="none";
+}
+</script>
+
+</body>
+</html>
+
     <!-- baki sab yahan paste kar do -->
 </div>
 ```

@@ -1,25 +1,84 @@
-<header>
-    <h1>🚀 X / Twitter Services</h1>
-</header>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>X Services</title>
 
-<div class="container">
+    <style>
+        body {
+            background:#0d0d0d;
+            color:white;
+            font-family: Arial;
+            text-align:center;
+        }
 
-    <div class="card">
-        <h3>200+ Followers</h3>
-        <p class="price">$2</p>
-        <button onclick="buyNow('200 Followers', 2)">Buy Now</button>
-    </div>
+        .card {
+            background:#1a1a1a;
+            padding:20px;
+            margin:15px;
+            border-radius:10px;
+            display:inline-block;
+            width:250px;
+        }
 
-    <div class="card">
-        <h3>500+ Followers</h3>
-        <p class="price">$4</p>
-        <button onclick="buyNow('500 Followers', 4)">Buy Now</button>
-    </div>
+        input {
+            padding:10px;
+            width:90%;
+            margin:10px 0;
+        }
 
-    <div class="card">
-        <h3>1000+ Followers</h3>
-        <p class="price">$7</p>
-        <button onclick="buyNow('1000 Followers', 7)">Buy Now</button>
-    </div>
+        button {
+            padding:10px 20px;
+            background:#00ffcc;
+            border:none;
+            cursor:pointer;
+        }
+    </style>
+</head>
 
+<body>
+
+<h1>🚀 X / Twitter Services</h1>
+
+<div class="card">
+    <h3>200 Followers</h3>
+    <p>$2</p>
+    <input type="text" id="user1" placeholder="Enter Username">
+    <button onclick="order('user1',2)">Order</button>
 </div>
+
+<div class="card">
+    <h3>500 Followers</h3>
+    <p>$4</p>
+    <input type="text" id="user2" placeholder="Enter Username">
+    <button onclick="order('user2',4)">Order</button>
+</div>
+
+<div class="card">
+    <h3>1000 Followers</h3>
+    <p>$7</p>
+    <input type="text" id="user3" placeholder="Enter Username">
+    <button onclick="order('user3',7)">Order</button>
+</div>
+
+<script>
+function order(id, price){
+    let username = document.getElementById(id).value;
+
+    if(username === ""){
+        alert("Enter username first!");
+        return;
+    }
+
+    let msg = `Order Details:\nUsername: ${username}\nPackage: $${price}`;
+
+    // WhatsApp redirect
+    let phone = "923274305373"; // apna number
+    let url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
+
